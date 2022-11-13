@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+cd "$SCRIPT_DIR"
+
+if [ ! -d node_modules ]; then
+    ./setup
+fi
+
+PATH="./node_modules/.bin:$PATH"
+
+ergogen config.yaml -o ergogen_output
+
