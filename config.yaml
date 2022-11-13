@@ -22,25 +22,25 @@ points:
               bind: [5, 0, 0, 0]
               column_net: P7
             home:
-              bind: [0, 12, 0, 0]
+              bind: [0, 11, 0, 0]
               column_net: P6
             top:
-              bind: [0, 8, 5, 0]
+              bind: [0, 20, 5, 0]
               column_net: P5
         ring:
           spread: 18
-          stagger: 17
+          stagger: 10
           rotate: -10
           origin: [0, -17]
           rows:
             bottom:
-              bind: [0, 0, 2, 10]
+              bind: [0, 0, 0, 10]
               column_net: P4
             home:
               bind: [5, 0, 5, 0]
               column_net: P3
             top:
-              bind: [0, 5, 0, 0]
+              bind: [0, 10, 0, 0]
               column_net: P0
         middle:
           spread: 18
@@ -80,10 +80,10 @@ points:
           origin: [0, -17]
           rows:
             bottom:
-              bind: [5, 19, 20, 2]
+              bind: [5, 0, 15, 60]
               column_net: P10
             home:
-              bind: [0, 27, 0, 5]
+              bind: [2, 20, 40, 5]
               column_net: P20
             top:
               bind: [0, 0, 5, 5]
@@ -103,7 +103,7 @@ points:
           rows:
             only:
               column_net: P7
-              bind: [10, 1, 0, 70]
+              bind: [20, 5, 0, 0]
         middle:
           rotate: -15
           origin: [-9, -9.5]
@@ -118,7 +118,7 @@ points:
           rows:
             only:
               column_net: P9
-              bind: [0, 0, 0, 5]
+              bind: [0, 0, 0, 10]
       rows:
         only:
           padding: 17
@@ -159,16 +159,3 @@ pcbs:
           rotate: -90
         params:
           orientation: down
-      trrs:
-        type: trrs
-        nets:
-          A: GND
-          B: GND
-          C: P2
-          D: VCC
-        anchor:
-          ref: matrix_inner_home
-          shift: [34.75, 6.5]
-        params:
-          reverse: true
-          symmetric: true

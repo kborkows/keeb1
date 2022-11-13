@@ -12,4 +12,5 @@ fi
 PATH="./node_modules/.bin:$PATH"
 
 ergogen config.yaml -o ergogen_output
+cp -v ergogen_output/pcbs/keeb1.kicad_pcb kicad
 
